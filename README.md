@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Bharath
 - 👀 I’m interested in Nothing
-- 🌱 I’m currently building Rental application
+- 🌱 I’m currently breathing
 - 💞️ I’m looking to collaborate on reactjs developers
 - 📫 How to reach me you know 
 
