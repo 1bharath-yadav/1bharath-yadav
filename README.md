@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Bharath
-- 👀 I’m interested in Nothing
-- 🌱 I’m currently 
-- 💞️
+- 👀 I’m interested in AI and Machine Learning
+- 🌱 I’m currently studying Bachelor of technology 3rd year
+- 💞️ to live
 - 📫 
 
 <!---
