@@ -1,8 +1,6 @@
 - 👋 Hi, I’m Bharath
 - 👀 I’m interested in AI and Machine Learning
 - 🌱 I’m currently studying Bachelor of technology 3rd year
-- 💞️ to live
-- 📫 
 
 <!---
 1bharath-yadav/1bharath-yadav is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
