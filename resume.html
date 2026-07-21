@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page {
+    size: letter;
+    margin: 0.55in 0.65in;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #111111;
+    font-size: 9.6pt;
+    line-height: 1.38;
+  }
+  .name {
+    font-size: 22pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  .contact {
+    text-align: center;
+    font-size: 9pt;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+  .contact a { color: #111111; text-decoration: none; }
+  .contact span.sep { margin: 0 6px; color: #888; }
+
+  h2.section {
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1.2px solid #111111;
+    padding-bottom: 2px;
+    margin-top: 11px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+  }
+  .edu-degree { font-weight: bold; }
+  .edu-sub { display: flex; justify-content: space-between; font-style: italic; color: #333; font-size: 9pt; margin-bottom: 5px; }
+
+  ul.skills {
+    margin: 0;
+    padding-left: 15px;
+  }
+  ul.skills li { margin-bottom: 2px; }
+
+  .project {
+    margin-bottom: 6px;
+  }
+  .project-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .project-title { font-weight: bold; }
+  .project-tech { font-style: italic; font-size: 8.7pt; color: #333; }
+  .project-desc { margin: 1px 0 0 0; }
+
+  .interests { margin: 0; padding-left: 15px; }
+  .interests li { margin-bottom: 1px; }
+
+  ul.certs { margin: 0; padding-left: 15px; }
+  ul.certs li { margin-bottom: 2px; }
+  ul.certs a { color: #111111; }
+</style>
+</head>
+<body>
+
+  <div class="name">BHARATH YADAV</div>
+  <div class="contact">
+    Kurnool, Andhra Pradesh, India
+    <span class="sep">|</span>
+    <a href="mailto:byadhav36@gmail.com">byadhav36@gmail.com</a>
+    <span class="sep">|</span>
+    <a href="https://www.linkedin.com/in/bharathyadav44/">linkedin.com/in/bharathyadav44</a>
+    <span class="sep">|</span>
+    <a href="https://github.com/1bharath-yadav">github.com/1bharath-yadav</a>
+  </div>
+
+  <h2 class="section">Education</h2>
+  <div class="edu-row">
+    <span class="edu-degree">B.S. in Data Science and Applications — Indian Institute of Technology Madras (Online)</span>
+    <span>Expected 2027</span>
+  </div>
+  <div class="edu-row">
+    <span class="edu-degree">B.Tech in Computer Science &amp; Engineering (AI &amp; ML) — Sandip University, Nashik</span>
+    <span>2022 – 2026</span>
+  </div>
+  <div class="edu-sub"><span>CGPA: 8.0</span><span></span></div>
+
+  <h2 class="section">Technical Skills</h2>
+  <ul class="skills">
+    <li><b>Languages &amp; Libraries:</b> Python (NumPy, pandas, scikit-learn, Matplotlib, Seaborn), FastAPI</li>
+    <li><b>ML / AI Systems:</b> End-to-end data cleaning and ML pipeline development; LangChain, LangGraph, Pydantic AI</li>
+    <li><b>Backend &amp; Systems:</b> REST API design, caching, concurrency and parallelism, backend architecture</li>
+    <li><b>Database:</b> DBMS, SQL, data warehousing; data visualization and storytelling</li>
+    <li><b>Foundations:</b> Data structures &amp; algorithms, engineering mathematics</li>
+    <li><b>Tools:</b> Linux (shell, systems administration), networking fundamentals</li>
+  </ul>
+
+  <h2 class="section">Projects</h2>
+
+  <div class="project">
+    <div class="project-title-row">
+      <span class="project-title"><a href="https://github.com/1bharath-yadav/tds-ta">tds-ta</a></span>
+      <span class="project-tech">Python, RAG, LangChain, Prompt Engineering</span>
+    </div>
+    <p class="project-desc">AI-powered teaching assistant for the IIT Madras Data Science curriculum, spanning data cleaning through a RAG-based agent pipeline for answering course and discourse queries.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-title-row">
+      <span class="project-title"><a href="https://github.com/1bharath-yadav/grasper">Grasper</a></span>
+      <span class="project-tech">Pydantic AI, LLM APIs, FastAPI, Streamlit</span>
+    </div>
+    <p class="project-desc">AI-driven data analysis system providing an end-to-end workflow from natural-language questions to data-backed answers.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-title-row">
+      <span class="project-title"><a href="https://github.com/1bharath-yadav/AIkonsole">AIkonsole</a></span>
+      <span class="project-tech">Shell Scripting</span>
+    </div>
+    <p class="project-desc">Terminal tool integrating LLMs into Konsole and other emulators, enabling conversational AI within terminal workflows.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-title-row">
+      <span class="project-title"><a href="https://github.com/1bharath-yadav/Interface-for-local-llms">Interface for Local LLMs</a></span>
+      <span class="project-tech">Flutter, Ollama API</span>
+    </div>
+    <p class="project-desc">GUI application for interacting with local LLMs via Ollama and custom APIs, replacing CLI workflows with an intuitive interface.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-title-row">
+      <span class="project-title"><a href="https://github.com/1bharath-yadav/study-genie">StudyGenie</a></span>
+      <span class="project-tech">RAG, LangChain, FastAPI</span>
+    </div>
+    <p class="project-desc">AI-powered personalized education system that adapts learning content and pacing to individual student needs.</p>
+  </div>
+
+  <h2 class="section">Interests</h2>
+  <ul class="interests">
+    <li>Artificial Intelligence — R&amp;D, open-source LLMs, scalable LLM systems</li>
+    <li>Applied Generative AI and identifying real-world LLM use cases</li>
+  </ul>
+
+  <h2 class="section">Certifications</h2>
+  <ul class="certs">
+    <li>IITM Online B.S. in Data Science — Foundations Level Certificate — <a href="https://www.linkedin.com/posts/bharathyadav44_thanks-to-iitm-for-providing-this-certificate-activity-7331350044878561281-RMc8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6HW70B1koYQxUMU0Kgj0QR-V26SpuVZPI">View Certificate</a></li>
+    <li>Elite Certificate in Entrepreneurship Essentials — NPTEL / SWAYAM — <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/127/noc25-ge11/Course/NPTEL25GE11S115350004404547345.pdf">View Certificate</a></li>
+  </ul>
+
+</body>
+</html>

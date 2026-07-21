@@ -8,5 +8,3 @@ I loved technology it leads me to learn things in AI/ML.
 - Email: byadhav36@gmail.com
 
 - We can discuss on llms,llm usecases,linux operations,science,technology and a little bit of spirituality. I have negligible knolewdge on other things.
-
-..uhh!..... what else ... Ahh ... living peacefylly.
