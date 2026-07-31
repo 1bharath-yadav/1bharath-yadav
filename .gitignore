@@ -1,0 +1,8 @@
+.vscode/
+
+podcast.xml
+context.json
+*.opus
+*.mp3
+__pycache__/
+.env

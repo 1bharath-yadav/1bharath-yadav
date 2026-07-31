@@ -1,0 +1,76 @@
+name: Weekly Podcast
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 6 * * 0"      # Sunday 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  podcast:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Generate Weekly Summary
+        run: |
+          uv run summary.py -u 1bharath-yadav -n Bharath
+
+      - name: Update README
+        run: |
+          uv run update_readme.py
+
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add README.md
+          git add podcast.xml
+          git add */README.md
+          git add */podcast-*.md
+          git add */code-review.md
+
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Weekly AI podcast"
+
+          git push
+
+      - name: Upload Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          WEEK=$(date -u +%F)
+
+          gh release upload main \
+            "$WEEK/podcast-$WEEK.mp3" \
+            --clobber
+
+          gh release upload main \
+            podcast.xml \
+            --clobber

@@ -1,10 +1,10 @@
-# Bharath Yadav
+# 1bharath-yadav
 
-I loved technology it leads me to learn things in AI/ML.
+profile links for Bharath.
 
-## Connect
+[LinkedIn](https://www.linkedin.com/in/bharathyadav44/) 🔸
+[GitHub Repos](https://1bharath-yadav.github.io/)
 
-- GitHub: [@1bharath-yadav](https://github.com/1bharath-yadav)
-- Email: byadhav36@gmail.com
+### Recent activity
 
-- We can discuss on llms,llm usecases,linux operations,science,technology and a little bit of spirituality. I have negligible knolewdge on other things.
+[🎙️ Podcast RSS feed](https://github.com/1bharath-yadav/1bharath-yadav/releases/download/main/podcast.xml)
